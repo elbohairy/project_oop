@@ -1,3 +1,18 @@
+# So, the game below works, but has many problems:
+#   1) Players are able to select moves that aren't available, and the game 
+#       simply skips their turn.
+#   2) Even if player one wins, the game doesn't exit until player two plays.
+#       The "fix" is just to throw an exit method right after the player wins, 
+#       which is not elegant
+#   3) The instructios the players need to give for their moves are too specific.
+#   4) I didn't do much about encapsulation.
+#   5) No play again feature.
+#   6) LOL, I don't even have a tie condition!
+
+# Looked at some solutions. Some good ideas:
+#   1) Using a coordinate system (letters on one axis, numbers on the other), and 
+#    giving possible moves as a list of coordinates.
+
 class TicTacToe
   private
   attr_reader :player1, :player2, :board
